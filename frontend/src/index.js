@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Game from './Game/Game';
-import Base from './Reviews/Base';
+import Base from './Template';
 import 'bootstrap/dist/css/bootstrap.css';
 
 
-ReactDOM.render( < Base / > ,
+
+ReactDOM.render(
+    < Base />,
     document.getElementById('root')
 );

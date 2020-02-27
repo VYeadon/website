@@ -5,7 +5,7 @@ from reviews.models import MovieReview, TvReview, BookReview, GameReview
 class BaseReviewSerializer(ModelSerializer):
     class Meta:
         fields = '__all__'
-        read_only_fields = ['created_at']
+        read_only_fields = ['created_at', 'edited_at']
         abstract = True
 
 
@@ -18,7 +18,7 @@ class MovieReviewSerializer(BaseReviewSerializer):
 
 class TvReviewSerializer(BaseReviewSerializer):
     class Meta:
-        model = MovieReview
+        model = TvReview
         fields = '__all__'
         read_only_fields = BaseReviewSerializer.Meta.read_only_fields
 

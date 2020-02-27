@@ -1,6 +1,8 @@
-import React, { PureComponent } from 'react'
+import React, {
+    PureComponent
+} from 'react'
 
-class Base extends PureComponent {
+class NavBar extends PureComponent {
     constructor(props) {
         super(props)
 
@@ -11,9 +13,9 @@ class Base extends PureComponent {
 
     render() {
         return (
-            <h1>Title base app</h1>
+
         )
     }
 }
 
-export default Base
+export default NavBar
