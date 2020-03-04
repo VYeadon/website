@@ -1,5 +1,5 @@
 # Project Website
-Website project to learn React and hopefully create a review website for films, games etc.
+Website project to keep up my React and hopefully create a review website for films, games etc.
 
 ## To Run
 
