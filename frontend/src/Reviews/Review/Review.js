@@ -1,6 +1,8 @@
 import React, { PureComponent, Component } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Paper } from '@material-ui/core';
+import { Grid, Paper, Container } from '@material-ui/core';
+import ReviewHead from './Head/ReviewHead';
+import ReviewBody from './Body/ReviewBody';
 
 const style = {
     paper: {
@@ -13,7 +15,7 @@ const style = {
     }
 }
 
-class ReviewInfo extends Component {
+class Review extends Component {
     constructor(props) {
         super(props)
 
@@ -24,13 +26,12 @@ class ReviewInfo extends Component {
 
     render() {
         return (
-
-            <Paper style={{ height: '100%' }} style={style.paper}>
-                Review Info
-            </Paper>
-
+            <Container>
+                <ReviewHead />
+                <ReviewBody />
+            </Container>
         )
     }
 }
 
-export default ReviewInfo
+export default Review

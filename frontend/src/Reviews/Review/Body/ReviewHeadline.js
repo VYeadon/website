@@ -1,6 +1,8 @@
 import React, { PureComponent, Component } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Paper } from '@material-ui/core';
+import { Grid, Typography, Container } from '@material-ui/core';
+
+const headline = "JoJo Rabbit Review"
 
 const style = {
     paper: {
@@ -13,7 +15,9 @@ const style = {
     }
 }
 
-class ReviewInfo extends Component {
+
+
+class ReviewHeadline extends Component {
     constructor(props) {
         super(props)
 
@@ -24,13 +28,11 @@ class ReviewInfo extends Component {
 
     render() {
         return (
-
-            <Paper style={{ height: '100%' }} style={style.paper}>
-                Review Info
-            </Paper>
-
+            <Typography variant="h1" style={style.paper}>
+                {headline}
+            </Typography>
         )
     }
 }
 
-export default ReviewInfo
+export default ReviewHeadline
